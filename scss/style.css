@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  font-family: 'Roboto', serif;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 42px;
+  background: -webkit-gradient(linear, left top, right top, from(#250060), color-stop(50%, #000), to(#250060));
+  background: linear-gradient(90deg, #250060 0%, #000 50%, #250060 100%);
+}
+
+.header .title {
+  font-family: 'Roboto black';
+  font-style: italic;
+  color: #FF0093;
+  font-size: 48px;
+}
+
+.header .subtitle {
+  margin-top: 24px;
+}
+
+.header .subtitle .subtitle-title1 {
+  display: inline-block;
+  padding: 4px 16px;
+  background: #8000FF;
+}
+
+.header .subtitle .subtitle-title2 {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #fff;
+  border-bottom: #8000FF 4px solid;
+}
+
+.header img {
+  margin: 24px 0 0 23px;
+}
+
+.header .header-message {
+  display: inline-block;
+  position: relative;
+  margin-top: 12px;
+}
+
+.header .header-message .header-message-text {
+  position: absolute;
+  top: 30px;
+  padding: 26px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.header .header-message .header-message-text span {
+  color: #FF0093;
+}
+
+.skill > * {
+  margin-bottom: 24px;
+}
+
+.skill .step .progress-icon {
+  position: relative;
+  margin-right: 12px;
+}
+
+.skill .step .progress-icon img {
+  position: relative;
+  z-index: 5;
+}
+
+.skill .step .progress-icon:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 48px;
+  height: calc(100% - 20px - 20px);
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #35006a;
+  opacity: .4;
+}
+
+.skill .step .progress-icon:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 35px 0 35px;
+  border-color: #35006a transparent transparent transparent;
+  opacity: .4;
+}
+
+.skill .step .progress-icon.active:after, .skill .step .progress-icon.active::before {
+  opacity: 1;
+}
+
+.skill .step .list {
+  margin-bottom: 8px;
+}
+
+.skill .step .list li .icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  text-align: center;
+  margin-right: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.skill .step .list li .icon i {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.skill .step .list li .icon.active {
+  border: #FF0093 2px solid;
+  background: #6900D1;
+}
+
+.skill .step .list li .icon-text {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.skill .step .list li .icon-text i {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.detail {
+  width: 300px;
+  border: 2px #FF0093 solid;
+  color: #fff;
+}
+
+.detail .detail-top {
+  text-align: center;
+  background: #8000FF;
+}
+
+.detail .detail-top i {
+  font-size: 160px;
+}
+
+.detail .detail-top .detail-top-text {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+.detail .detail-bottom {
+  text-align: center;
+  background: #6900D1;
+}
+
+.detail .detail-bottom i {
+  font-size: 34px;
+}
+
+.detail .detail-bottom .detail-bttom-title {
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.detail .detail-bottom .detail-bttom-list li a {
+  display: inline-block;
+  width: 200px;
+  height: 35px;
+  margin-bottom: 5px;
+  line-height: 35px;
+  border: #fff 1px solid;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
